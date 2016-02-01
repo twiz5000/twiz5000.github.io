@@ -1,0 +1,16 @@
+<h1>Welcome to my Test App!!</h1>
+
+<p>Enter your phone number and hit "Get Text!" to test out the Test App</p>
+
+<%= form_tag("submit", method: "post") do %> <%#"get" and "post" both work here...%>
+  <%= label_tag(:q, "phone number") %> <%#puts label next to test field "phone number"%>
+
+  <%= text_field_tag(:q) %> <%# cant believe i didn't notice it before, only filed without quotes, :q is the get, @q is the instance we declare to flow the input through the route and to the controler
+  <%= submit_tag("Get Text") %>
+  <%= submit_tag("Get Text") %>
+
+</br?
+
+this is before submit
+
+<% end %>

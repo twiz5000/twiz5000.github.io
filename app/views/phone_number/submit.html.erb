@@ -1,0 +1,22 @@
+ <h1>Welcome to my Test App!!</h1>
+<p>Enter your phone number and hit "Get Text!" to test out the Test App</p>
+
+<%= form_tag("submit", method: "get") do %>
+  <%= label_tag(:q, "phone number") %> <%#either this or the text field is the actual "get" var being passed, either way its the "q" and that what we pass an @instance of below%>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Get Text") %>
+
+</br>
+</br>
+
+
+<%=@q%>
+</br>
+</br>
+
+
+
+
+<%=link_to "Test Again!!", root_path%> <%#link back to enter number page%>
+
+<% end %>
